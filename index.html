@@ -1,0 +1,565 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>B1G Geoportal</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/b1g.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="img/aerial_photo.png">
+          <h1 class="project-tagline">
+            B1G Geoportal
+          </h1>
+          <div class="project-text">
+            <h3>Development Update</h3>
+            <p>December 2017 Summit</p>
+            <p>
+              <small>
+                <a href="mailto:ewlarson@umn.edu">
+                  <i class="fa  fa-envelope">
+                  </i> Eric Larson</a>
+                &nbsp; / &nbsp;
+                <a href="http://twitter.com/ewlarson_umn">
+                  <i class="fa fa-twitter"></i>
+                  @ewlarson_umn
+                </a>
+              </small>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <section>
+            <h2>Hello!</h2>
+            <p>It's super nice to be here.</p>
+          </section>
+
+          <section>
+            <h2>
+              <i class="fa icon-warning-sign"></i>
+              Warning!
+            </h2>
+            <a href="http://www.html5rocks.com/en/">
+              <img src="img/web_standards.png" alt="Web Standards: HTML5, CCS3, JS"/>
+            </a>
+          </section>
+        </section>
+
+        <section data-background="#2F3440">
+          <section>
+            <h2><i class="fa fa-arrow-circle-down"></i> My Background</h2>
+          </section>
+
+          <section>
+            <img src="img/library_pic_iowa.png" alt="Picture of a library."/>
+          </section>
+
+          <section>
+            <h2>
+              UI &middot; Reshelving &middot; 1996-1998
+            </h2>
+            <a href="https://www.lib.uiowa.edu/locations/main/">
+              <img src="img/library_map_iowa.png" alt="U of Iowa - Main Library"/>
+            </a>
+          </section>
+
+          <section>
+            <img src="img/library_pic_illinois.png" alt="Picture of a library."/>
+          </section>
+
+          <section>
+            <h2>
+              U of I &middot; BibApp &middot; 2006-2010
+            </h2>
+            <a href="http://www.lib.umn.edu/">
+              <img src="img/library_map_illinois.png" alt="U of Illinois - Grainger Engineering Library"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              BibApp
+            </h2>
+            <a href="http://search.library.wisc.edu/">
+              <img src="img/bibapp_01.png" alt="BibApp">
+            </a>
+          </section>
+
+          <section>
+            <h2 style="text-align:left;">BibApp</h2>
+            <ul style="float:right; width:58%;">
+              <li>UW Online Bibliography
+              <li>Colophon
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>Apache Solr</li>
+                </ul>
+              </li>
+            </ul>
+            <img style="float:left" height="580" src="img/bibapp.png" alt="UW Forward"/>
+          </section>
+
+          <section>
+            <img src="img/library_pic_wisc.png" alt="Picture of a library."/>
+          </section>
+
+          <section>
+            <h2>
+              UW &middot; Web Dev &middot; 2006-2013
+            </h2>
+            <a href="http://library.wisc.edu/">
+              <img src="img/library_map_wisc.png" alt="UW - Memorial Library"/>
+            </a>
+          </section>
+
+          <section>
+            <h2 style="text-align:left;">
+              <i class="fa fa-laptop"></i>
+              UW Forward
+            </h2>
+            <a href="http://search.library.wisc.edu/">
+              <img src="img/forward_laptop.png" alt="UW Forward: Laptop">
+            </a>
+          </section>
+
+          <section>
+            <h2 style="text-align:left;">UW Forward</h2>
+            <ul style="float:right; width:58%;">
+              <li>UW System Library Catalog</li>
+              <li>9.5M+ Records
+                <ul>
+                  <li>MARC</li>
+                  <li>MODS</li>
+                  <li>Dublin Core</li>
+                </ul>
+              </li>
+              <li>Colophon
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>Apache Solr</li>
+                  <li>Blacklight</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </li>
+            </ul>
+            <img style="float:left" height="580" src="img/forward.png" alt="UW Forward"/>
+          </section>
+
+          <section>
+            <img src="img/library_pic_umn.png" alt="Picture of a library."/>
+          </section>
+
+          <section>
+            <h2 style="text-align:left;">
+              UMN &middot; Web Arch. &amp; UX Analyst &middot; 2013+
+            </h2>
+            <a href="http://www.lib.umn.edu">
+              <img src="img/library_map_umn.png" alt="UMN - Wilson Library"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              UMN Libraries
+            </h2>
+            <a href="http://www.lib.umn.edu/">
+              <img src="img/umnlib_homepage.png" alt="U of MN Libraries - Homepage"/>
+            </a>
+          </section>
+        </section>
+
+        <section data-background="#fafafa">
+          <section>
+            <h2>
+              B1G Geoportal
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/geoportal.png" alt="B1G Geoportal - Homepage"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Development Path
+            </h2>
+            <ul>
+              <li style="list-style:none;">
+                <i class="fa fa-arrow-down"></i>
+                Solr (Search/Datastore)
+              </li>
+              <li style="list-style:none;">
+                <i class="fa fa-arrow-down"></i>
+                Ruby on Rails (Web Framework)
+              </li>
+              <li style="list-style:none;">
+                <i class="fa fa-arrow-down"></i>
+                Blacklight (Discovery Layer)
+              </li>
+              <li style="list-style:none;">
+                <i class="fa fa-arrow-down"></i>
+                Geoblacklight (Geo Discovery Layer)
+              </li>
+              <li style="list-style:none;">
+                <i class="fa fa-arrow-down"></i>
+                Local Customizations (CSS, JS, HTML, Ruby)
+              </li>
+              <li style="list-style:none;">
+                <i class="fa fa-thumbs-up"></i>
+                B1G Geoportal
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              Solr > Blacklight
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/blacklight_app.png" alt="B1G Geoportal - Blacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Solr > Blacklight
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/blacklight_app_search.png" alt="B1G Geoportal - Blacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Solr > BL > GBL
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/geoblacklight_app.png" alt="B1G Geoportal - Geoblacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Solr > BL > GBL
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/geoblacklight_app_search.png" alt="B1G Geoportal - Blacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Solr > BL > GBL > B1G
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/geoportal.png" alt="B1G Geoportal - Blacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Three Projects in One
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/complexity.png" alt="B1G Geoportal - Three projects in one"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Balance
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/challenge.png" alt="B1G Geoportal - Three projects in one"/>
+            </a>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>
+              <i class="fa fa-paint-brush"></i>
+              Customizations
+            </h2>
+          </section>
+
+          <section>
+            <h2>
+              Simple - Look &amp; Feel
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/geoblacklight_app_search.png" alt="B1G Geoportal - Geoblacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Simple - Look &amp; Feel
+            </h2>
+            <h3>Design Goals</h3>
+            <ul>
+              <li>Follow BTAA branding guidelines</li>
+              <li>Reusable styles for site and blog</li>
+              <li>Ease of maintainablity</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              Simple - Look &amp; Feel - CSS
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/customization_css.png" alt="B1G Geoportal - CSS"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Simple - Look &amp; Feel - Results
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/geoportal_app_search_no_clusters.png" alt="B1G Geoportal - Blacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Moderate - Map Clusters
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/geoportal_map_clusters.png" alt="B1G Geoportal - Geoblacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Moderate - Map Clusters
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/geoportal_app_search.png" alt="B1G Geoportal - Geoblacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Moderate - Map Clusters
+            </h2>
+            <h3>Design Goals</h3>
+            <ul>
+              <li>Help the map "speak"</li>
+              <li>Make the map visually engaging</li>
+              <li>Allow the map to inform
+              <ul>
+                <li>Collection strengths</li>
+                <li>Highlight empty result areas</li>
+              </ul></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              Moderate - Map Clusters
+            </h2>
+            <h3>Implementation</h3>
+            <ul>
+              <li>Add Leaflet Clustering Plugin (JS)</li>
+              <li>Add Solr schema field (Solr)</li>
+              <li>Initialize map with centroid data (JS)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>
+              Add Leaflet Clustering Plugin
+            </h3>
+            <a href="https://github.com/SINTEF-9012/PruneCluster">
+              <img src="img/PruneCluster.png" alt="PruneCluster - Leaflet plugin"/>
+            </a>
+          </section>
+
+          <section>
+            <h3>
+              Add Solr centroid schema field
+            </h3>
+            <a href="https://github.com/SINTEF-9012/PruneCluster">
+              <img src="img/solr_admin_schema_change.png" alt="Solr - Schema analysis view"/>
+            </a>
+          </section>
+
+          <section>
+            <h3>Initialize map with centroid data</h3>
+            <small>
+              <a style="color:#FFF" href="https://github.com/BTAA-Geospatial-Data-Project/geoportal/blob/c9f7452dbf3c9af881bf055c857b075b12798c0b/app/assets/javascripts/geoblacklight/modules/results.js#L52-L69">
+                /app/assets/javascript/geoblacklight/modules/results.js
+              </a>
+            </small>
+            <pre><code>
+    // instantiate new map with PruneCluster
+    geoblacklight = new GeoBlacklight.Viewer.Map(this, { bbox: bbox });
+    var pruneCluster = new PruneClusterForLeaflet();
+
+    // Oboe - Re-query Solr for JSON results
+    var urlStr = window.location.href + '&format=json&per_page=1000&rows=10000';
+    var urlStr = urlStr.replace(/page=[0-9]/,'');
+    oboe(urlStr)
+      .node('response.docs.*', function( doc ){
+          if(typeof doc.centroid_s != 'undefined'){
+            var latlng = doc.centroid_s.split(",")
+            var marker = new PruneCluster.Marker(latlng[0],latlng[1], {popup: "<a href='/catalog/" + doc.uuid + "'>" + doc.dc_title_s + "</a>"});
+            pruneCluster.RegisterMarker(marker);
+          }
+        }
+      )
+      .done(function(){
+        geoblacklight.map.addLayer(pruneCluster);
+      })
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>
+              Moderate - Map Clusters
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/geoportal_app_search.png" alt="B1G Geoportal - Geoblacklight UI"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              <i class="fa fa-warning"></i>
+              WAIT!
+            </h2>
+            <h3>Moderate - Map Clusters</h3>
+            <ul>
+              <li>Maintenance?</li>
+              <li>Software tests?</li>
+              <li>Geoblacklight upgrades?</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Add some tests</h3>
+<pre><code>
+  def test_map_clustering
+    visit "/?q=water&amp;search_field=all_fields&amp;view=mapview"
+    assert page.has_selector?("div.prunecluster.leaflet-marker-icon", :wait => 10)
+  end
+
+  def test_map_clustering_result_paging
+    visit "/?page=2&amp;q=water&amp;search_field=all_fields&amp;view=mapview"
+    assert page.has_selector?("div.prunecluster.leaflet-marker-icon", :wait => 10)
+  end
+
+</code></pre>
+          </section>
+
+          <section>
+            <h3>Moderate - Map Clusters</h3>
+            <ul>
+              <li style="text-decoration:line-through; color:#333;">Maintenance?</li>
+              <li style="text-decoration:line-through; color:#333;">Software tests?</li>
+              <li>Geoblacklight upgrades?</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              <i class="fa fa-paint-brush"></i>
+              Customizations
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/truck.png" alt="Truck"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              <i class="fa fa-paint-brush"></i>
+              Customizations - Um...
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/truck_flames.png" alt="Truck"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              <i class="fa fa-paint-brush"></i>
+              Customizations - OMG NO
+            </h2>
+            <a href="https://geo.btaa.org">
+              <img src="img/truck_japanese_light.png" alt="Truck"/>
+            </a>
+          </section>
+        </section>
+
+        <section data-background="#2F3440">
+          <section>
+            <h2>
+              <i class="fa fa-users"></i> Community
+            </h2>
+          </section>
+
+          <section>
+            <h2>
+
+            </h2>
+          </section>
+        </section>
+
+        <section data-background="#e6e6e6">
+          <section>
+            <h2>
+              Web Traffic
+            </h2>
+            <a href="https://datastudio.google.com/open/1OHXo0QgdtO-l8ncAKHBUp1dePKoTi5ip">
+              <iframe width="100%" height="750" src="https://datastudio.google.com/embed/reporting/1OHXo0QgdtO-l8ncAKHBUp1dePKoTi5ip/page/hvYK" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </a>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>

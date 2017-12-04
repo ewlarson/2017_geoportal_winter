@@ -437,7 +437,7 @@
                 /app/assets/javascript/geoblacklight/modules/results.js
               </a>
             </small>
-            <pre><code>
+            <pre><code class="javascript">
     // instantiate new map with PruneCluster
     geoblacklight = new GeoBlacklight.Viewer.Map(this, { bbox: bbox });
     var pruneCluster = new PruneClusterForLeaflet();
@@ -484,7 +484,7 @@
 
           <section>
             <h3>Add some tests</h3>
-<pre><code>
+<pre><code class="ruby">
   def test_map_clustering
     visit "/?q=water&amp;search_field=all_fields&amp;view=mapview"
     assert page.has_selector?("div.prunecluster.leaflet-marker-icon", :wait => 10)
@@ -547,7 +547,7 @@
 
           <section>
             <h2>
-              Data Types
+              B1G Geoportal Data Types
             </h2>
             <table>
               <tbody>
@@ -623,6 +623,87 @@
             <a href="https://geo.btaa.org">
               <img src="img/img_fold.png" alt="B1G Geoportal - Image at fold"/>
             </a>
+          </section>
+
+          <section>
+            <h2>
+              Stanford
+            </h2>
+            <a href="https://earthworks.stanford.edu/">
+              <img src="img/geoblacklight_stanford.png" alt="Earthworks - Stanford"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              NYU
+            </h2>
+            <a href="https://geo.nyu.edu/">
+              <img src="img/geoblacklight_nyu.png" alt="Geoblacklight - NYU"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              VecNet
+            </h2>
+            <a href="https://dl.vecnet.org/?q=&showmap=on">
+              <img src="img/geoblacklight_vecnet.png" alt="Geoblacklight - VecNet"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Princeton
+            </h2>
+            <a href="https://github.com/pulibrary/pulmap/">
+              <img src="img/geoblacklight_princeton.png" alt="Geoblacklight - Princeton"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Pulmap - GitHub
+            </h2>
+            <a href="https://github.com/pulibrary/pulmap/">
+              <img src="img/pulmap_github.png" alt="Princeton - Github"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              Pulmap - Eliot
+            </h2>
+            <a href="https://github.com/eliotjordan">
+              <img src="img/eliotjordan.png" alt="Eliot Jordan - Github"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>thumbnail.rb</h2>
+            <pre><code class="ruby">
+class Thumbnail
+  def initialize(document)
+    @document = document
+  end
+
+  ##
+  # Get the thumbnail url from dctrefs if turned on in settings.
+  # If not in dctrefs, then get it from a service endpoint (WMS, IIIF, etc...).
+  # Return nil if both of those fail, so the thumbnail is not displayed.
+  # @return [String, nil] thumbnail url
+  def url
+    if thumbnail_solr_field?
+      thumbnail_solr_field
+    elsif Settings.THUMBNAIL.USE_DCT_REFS
+      thumbnail_reference || generated_thumbnail
+    elsif restricted_scanned_map?
+      thumbnail_reference
+    else
+      generated_thumbnail
+    end
+  end
+            </code></pre>
           </section>
 
           <section>
